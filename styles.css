@@ -227,13 +227,30 @@ h3 {
   margin-top: 4px;
 }
 
-#signalCanvas {
-  aspect-ratio: 16 / 9;
-  background: #101b2d;
+.hero-figure-link {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius);
-  display: block;
-  height: auto;
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  margin: 1rem auto;
+  max-height: 110px;
+  max-width: 260px;
+  overflow: hidden;
   width: 100%;
+}
+
+.hero-figure {
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.25rem;
+  width: auto;
 }
 
 .metric-grid {
