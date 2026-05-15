@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saam Nazempour portfolio for quant, quant developer, ML engineer, and data scientist roles.">
+    <title>Saam Nazempour | Quant, ML & Data Science</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Saam Nazempour home">
+        <span class="brand-mark">SN</span>
+        <span>Saam Nazempour</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="assets/Saam_Nazempour_CV.pdf">CV</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Cambridge MPhil DIS | ML/AI Engineer</p>
+          <h1>Quantitative ML<br class="mobile-break"> engineer building<br class="mobile-break"> rigorous models, inference pipelines, and decision tools.</h1>
+          <p class="lede">
+            I work across machine learning, statistical modelling, data intensive science, and quantitative analytics.
+            Current focus: RAG evaluation, Kubeflow orchestration, retrieval quality, and production ML workflows.
+          </p>
+          <div class="cta-row" aria-label="Contact and profile links">
+            <a class="button primary" href="mailto:sn665@cam.ac.uk">Email</a>
+            <a class="button secondary" href="https://github.com/S-Nazem">GitHub</a>
+            <a class="button secondary" href="assets/Saam_Nazempour_CV.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <aside class="signal-panel" aria-label="Profile summary">
+          <div class="profile-row">
+            <img src="https://avatars.githubusercontent.com/u/178089894?v=4" alt="Saam Nazempour GitHub avatar">
+            <div>
+              <strong>Saam Nazempour</strong>
+              <span>London, UK</span>
+            </div>
+          </div>
+          <canvas id="signalCanvas" width="640" height="360" aria-label="Animated quantitative signal visual"></canvas>
+          <dl class="metric-grid">
+            <div>
+              <dt>Cambridge MPhil</dt>
+              <dd>Distinction, 76%</dd>
+            </div>
+            <div>
+              <dt>Public repos</dt>
+              <dd>7</dd>
+            </div>
+            <div>
+              <dt>Forecasting R2</dt>
+              <dd>&gt; 0.85 median</dd>
+            </div>
+            <div>
+              <dt>Quant internship</dt>
+              <dd>UBS ACQA</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="focus-strip" aria-label="Target role focus">
+        <span>Quant research</span>
+        <span>Quant development</span>
+        <span>ML engineering</span>
+        <span>Data science</span>
+        <span>RAG evaluation</span>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects with measurable modelling depth</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-meta">
+              <span>LLMs for time series</span>
+              <span>Python, LoRA, HuggingFace</span>
+            </div>
+            <h3>LoRA-tuned LLMs for nonlinear forecasting</h3>
+            <p>
+              Fine-tuned Qwen2.5-0.5B-Instruct using LLMTIME-style tokenisation to forecast Lotka-Volterra
+              dynamics under a strict compute budget.
+            </p>
+            <ul>
+              <li>Median R2 above 0.85 across 10 evaluation systems.</li>
+              <li>Tracked training and inference FLOPs, keeping total compute within 1e17.</li>
+              <li>Evaluated with MSE, correlation, DTW, and long-horizon forecast plots.</li>
+            </ul>
+            <a href="https://github.com/S-Nazem/lora-finetuning-llms-forecasting">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Bayesian inference</span>
+              <span>JAX, NumPyro, HMC</span>
+            </div>
+            <h3>Antikythera mechanism hole reconstruction</h3>
+            <p>
+              Built an inference pipeline estimating the original calendar ring geometry from 81 surviving holes,
+              comparing isotropic and radial-tangential noise models.
+            </p>
+            <ul>
+              <li>Used MLE, HMC/NUTS, posterior predictive checks, and residual analysis.</li>
+              <li>RT model estimated 355.26 +/- 1.41 holes with stronger WAIC performance.</li>
+            </ul>
+            <a href="https://github.com/S-Nazem/bayseian-inference-project">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Radiomics ML</span>
+              <span>SHAP, sklearn, XGBoost</span>
+            </div>
+            <h3>Radiomics feature selection and explainability</h3>
+            <p>
+              Developed end-to-end imaging biomarker workflows for photoacoustic and CT data, combining
+              ANOVA sensitivity analysis, feature selection, classification, and model explanations.
+            </p>
+            <ul>
+              <li>Compared RFE and Boruta workflows across original and resampled datasets.</li>
+              <li>Repeated SHAP analysis over 1000 seeds to assess explanation stability.</li>
+            </ul>
+            <a href="https://github.com/S-Nazem/radiomics-anova-shap-explainability">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Scientific computing</span>
+              <span>CASA, Python</span>
+            </div>
+            <h3>Self-calibration for interferometric imaging</h3>
+            <p>
+              Built and evaluated a CASA-compatible self-calibration pipeline for VLA L-band observations of
+              3C147 and Abell S1063.
+            </p>
+            <ul>
+              <li>Used iterative gain correction to improve image fidelity.</li>
+              <li>Logged RMS noise and PSNR across calibration cycles.</li>
+            </ul>
+            <a href="https://github.com/S-Nazem/astro-calibration-interferometric-imaging-ds">View repository</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Applied ML, quant analytics, and scientific software</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div>
+              <h3>Lloyds Banking Group</h3>
+              <p>Data Science & AI Graduate, ML/AI Engineer | Sep 2025 - Present</p>
+            </div>
+            <ul>
+              <li>Developing Kubeflow components and orchestration pipelines for a GenAI RAG solution.</li>
+              <li>Evaluating chunking strategies and retrieval algorithms to improve context relevance.</li>
+              <li>Building RAG evaluation pipelines with Ragas, internal libraries, AI-as-judge workflows, and human review.</li>
+              <li>Developing internal user interfaces with HTML and Plotly Dash.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <h3>UBS</h3>
+              <p>Quant Summer Analyst | Jun 2023 - Aug 2023</p>
+            </div>
+            <ul>
+              <li>Built a dashboard for ACQA quantitative comparative analytics used by traders.</li>
+              <li>Designed models to visualise Greeks and sensitivity to market movements.</li>
+              <li>Created an iterative solver for barrier levels and rebates on custom structured products.</li>
+              <li>Back-tested a 10-year spread strategy and delivered findings into a monthly sales pack.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-skills" id="skills">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Strong mathematical and computational base</h2>
+          </div>
+          <div class="education-list">
+            <article>
+              <h3>University of Cambridge</h3>
+              <p>MPhil, Data Intensive Science | Distinction, 76%</p>
+              <span>Machine Learning and AI, Deep Learning, Research Computing, Statistical Data Analysis, Bayesian Statistics, Software Development.</span>
+            </article>
+            <article>
+              <h3>Imperial College London</h3>
+              <p>MSci, Physics | 2:1</p>
+              <span>Computational Physics, Quantum Field Theory, General Relativity, Quantum Optics, Mathematical Methods, Differential Equations.</span>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Technical stack</p>
+            <h2>Tools I use to ship and analyse</h2>
+          </div>
+          <div class="skill-cloud" aria-label="Technical skills">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>GCP</span>
+            <span>CI/CD</span>
+            <span>NLP</span>
+            <span>Kubeflow</span>
+            <span>Git</span>
+            <span>Bash</span>
+            <span>Jupyter</span>
+            <span>JAX</span>
+            <span>NumPyro</span>
+            <span>scikit-learn</span>
+            <span>SHAP</span>
+            <span>Plotly Dash</span>
+            <span>Pydantic</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band">
+        <div>
+          <p class="eyebrow">Open to roles</p>
+          <h2>Quant, quant dev, ML engineer, and data scientist opportunities.</h2>
+        </div>
+        <div class="cta-row">
+          <a class="button primary" href="mailto:sn665@cam.ac.uk">Get in touch</a>
+          <a class="button secondary" href="https://github.com/S-Nazem">GitHub profile</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Saam Nazempour</span>
+      <span>Built for quantitative, ML, and data science recruiting.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
