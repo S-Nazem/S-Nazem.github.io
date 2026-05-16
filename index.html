@@ -26,10 +26,10 @@
       <section class="hero section-band">
         <div class="hero-copy">
           <p class="eyebrow">Cambridge MPhil DIS | ML/AI Engineer</p>
-          <h1>ML engineer and quantitative developer building statistical models, AI systems, and decision tools.</h1>
+          <h1>ML engineer and quantitative developer building forecasting, inference, and applied AI systems.</h1>
           <p class="lede">
-            I combine a physics and data science background with hands-on experience in applied AI, quantitative analytics,
-            and production-facing ML workflows.
+            Physics-trained data scientist with project work in Bayesian modelling, radiomics explainability,
+            LLM time-series forecasting, and applied AI workflows in financial services.
           </p>
           <div class="cta-row" aria-label="Contact and profile links">
             <a class="button primary" href="mailto:sn665@cam.ac.uk">Email</a>
@@ -77,7 +77,7 @@
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Selected work</p>
-          <h2>Projects spanning forecasting, inference, explainability, and scientific computing</h2>
+          <h2>Applied modelling work with clear technical outputs</h2>
         </div>
 
         <div class="project-grid">
@@ -88,17 +88,17 @@
             </div>
             <h3>LoRA-tuned LLMs for nonlinear forecasting</h3>
             <p>
-              Fine-tuned Qwen2.5-0.5B-Instruct using LLMTIME-style tokenisation to forecast Lotka-Volterra
-              dynamics under a strict compute budget.
+              Fine-tuned Qwen2.5-0.5B-Instruct with LoRA and LLMTIME-style tokenisation to forecast
+              nonlinear Lotka-Volterra systems under a strict FLOPs budget.
             </p>
-            <div class="project-figure-strip" aria-label="Project figures from GitHub READMEs">
-              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots/ANOVA_plots/ANOVA_full.png" alt="ANOVA feature sensitivity plot">
-              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots/SHAP_plots/shap_beeswarm.png" alt="SHAP beeswarm feature importance plot">
-              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots_extension/ML_plots/combined_rfe_boruta_smote_shaded.png" alt="Classifier performance comparison plot">
+            <div class="project-figure-strip" aria-label="LoRA forecasting project figures">
+              <img src="https://raw.githubusercontent.com/S-Nazem/lora-finetuning-llms-forecasting/main/plots/Trained_FINALFINAL.png" alt="LoRA model trained forecast plot">
+              <img src="https://raw.githubusercontent.com/S-Nazem/lora-finetuning-llms-forecasting/main/plots/LRvsRANK.png" alt="LoRA rank and learning rate sweep plot">
+              <img src="https://raw.githubusercontent.com/S-Nazem/lora-finetuning-llms-forecasting/main/plots/ctx_loss_final.png" alt="Context length training loss plot">
             </div>
             <ul>
               <li>Median R2 above 0.85 across 10 evaluation systems.</li>
-              <li>Tracked training and inference FLOPs, keeping total compute within 1e17.</li>
+              <li>Tracked training and inference FLOPs, keeping total compute below 1e17.</li>
               <li>Evaluated with MSE, correlation, DTW, and long-horizon forecast plots.</li>
             </ul>
             <a href="https://github.com/S-Nazem/lora-finetuning-llms-forecasting">View repository</a>
@@ -114,6 +114,9 @@
               Built an inference pipeline estimating the original calendar ring geometry from 81 surviving holes,
               comparing isotropic and radial-tangential noise models.
             </p>
+            <div class="project-thumb">
+              <img src="https://raw.githubusercontent.com/S-Nazem/bayseian-inference-project/main/plots/Fig5.png" alt="Antikythera posterior predictive geometry plot">
+            </div>
             <ul>
               <li>Used MLE, HMC/NUTS, posterior predictive checks, and residual analysis.</li>
               <li>RT model estimated 355.26 +/- 1.41 holes with stronger WAIC performance.</li>
@@ -131,6 +134,11 @@
               Developed end-to-end imaging biomarker workflows for photoacoustic and CT data, combining
               ANOVA sensitivity analysis, feature selection, classification, and model explanations.
             </p>
+            <div class="project-figure-strip compact" aria-label="Radiomics project figures">
+              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots/ANOVA_plots/ANOVA_full.png" alt="ANOVA feature sensitivity plot">
+              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots/SHAP_plots/shap_beeswarm.png" alt="SHAP beeswarm feature importance plot">
+              <img src="https://raw.githubusercontent.com/S-Nazem/radiomics-anova-shap-explainability/main/plots_extension/ML_plots/combined_rfe_boruta_smote_shaded.png" alt="Classifier performance comparison plot">
+            </div>
             <ul>
               <li>Compared RFE and Boruta workflows across original and resampled datasets.</li>
               <li>Repeated SHAP analysis over 1000 seeds to assess explanation stability.</li>
@@ -148,6 +156,9 @@
               Built and evaluated a CASA-compatible self-calibration pipeline for VLA L-band observations of
               3C147 and Abell S1063.
             </p>
+            <div class="project-thumb">
+              <img src="https://raw.githubusercontent.com/S-Nazem/astro-calibration-interferometric-imaging-ds/main/PLOTS/Fig1.png" alt="Radio interferometric imaging calibration plot">
+            </div>
             <ul>
               <li>Used iterative gain correction to improve image fidelity.</li>
               <li>Logged RMS noise and PSNR across calibration cycles.</li>
@@ -215,7 +226,7 @@
         <div>
           <div class="section-heading">
             <p class="eyebrow">Technical stack</p>
-            <h2>Tools I use to ship and analyse</h2>
+            <h2>Tools used across modelling, ML, and deployment work</h2>
           </div>
           <div class="skill-cloud" aria-label="Technical skills">
             <span>Python</span>
