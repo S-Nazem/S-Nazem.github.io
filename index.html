@@ -88,6 +88,43 @@
             <a href="https://github.com/S-Nazem/lora-finetuning-llms-forecasting">View repository</a>
           </article>
 
+          <article class="project-card featured quant-project-card">
+            <div class="project-meta">
+              <span>Quant research</span>
+              <span>Python, statsmodels, sklearn</span>
+            </div>
+            <h3>Statistical arbitrage pairs trading research</h3>
+            <p>
+              Refactored an ExodusPoint research assessment notebook into a reproducible Python project
+              exploring mean-reversion pairs trading and event-study signals on anonymized equity data.
+            </p>
+            <div class="project-figure-strip quant-strip" aria-label="Statistical arbitrage project figures">
+              <img src="assets/stat-arb/candidate-pair-cumulative-returns.png" alt="Candidate pair cumulative return paths for correlated anonymized stocks">
+              <img src="assets/stat-arb/rule-based-pairs-signals.png" alt="Rule-based pairs trading spread with long and short signals">
+              <img src="assets/stat-arb/pairs-zscore-thresholds.png" alt="Moving average spread z-score with trading thresholds">
+            </div>
+            <dl class="metric-grid project-metrics">
+              <div>
+                <dt>Pair corr.</dt>
+                <dd>0.9747</dd>
+              </div>
+              <div>
+                <dt>ADF p-value</dt>
+                <dd>0.0006</dd>
+              </div>
+              <div>
+                <dt>Rule Sharpe</dt>
+                <dd>0.56</dd>
+              </div>
+            </dl>
+            <ul>
+              <li>Screened correlated cumulative-return paths with cointegration and ADF diagnostics.</li>
+              <li>Built rule-based and random-forest signal pipelines with chronological validation.</li>
+              <li>Generated reproducible research figures from package code rather than notebook screenshots.</li>
+            </ul>
+            <a href="https://github.com/S-Nazem/statistical-arbitrage-pairs-trading">View repository</a>
+          </article>
+
           <article class="project-card">
             <div class="project-meta">
               <span>Bayesian inference</span>
